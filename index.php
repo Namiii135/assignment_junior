@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body class="bg-light">
   <div class="container mt-5">
-    <h2 class="mb-4">Eleicity Charge Calculahjtor</h2>
+    <h2 class="mb-4">Electricity Charge Calculator</h2>
     <form method="POST" class="card p-4 shadow-sm">
       <div class="form-group">
         <label for="voltage">Voltage (V)</label>
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="rate">Current Rate (sen/kWh)</label>
         <input type="number" class="form-control" name="rate" value="21.80" step="0.01" required>
       </div>
-      >
+      <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
   </div>
 </body>
