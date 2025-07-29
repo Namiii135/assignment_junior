@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body class="bg-light">
   <div class="container mt-5">
-    <h2 class="mb-4">Electricity Charge Calculator</h2>
+    <h2 class="mb-4">Eleicity Charge Calculahjtor</h2>
     <form method="POST" class="card p-4 shadow-sm">
       <div class="form-group">
         <label for="voltage">Voltage (V)</label>

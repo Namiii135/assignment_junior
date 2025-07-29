@@ -1,14 +1,12 @@
-# Ignore Mac system files
-DS_store
+# Ignore system & temp files
+*.lock
+*.ini
+*.img
+*.pb
+*.qcow2
+*.keystore
+*.conf
 
-# Ignore node_modules folder
-node_modules/
-
-# Ignore all text files
-*.txt
-
-# Ignore files related to API keys
-env
-
-# Ignore SASS config files
-sass-cache/
+# Ignore Android and hidden folders
+.android/
+.gradle/
