@@ -40,24 +40,24 @@ echo "<thead class='thead-dark'><tr><th>#</th><th>Hour</th><th>Energy (kWh)</th>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Electricity Charge Calculator</title>
+  <title>Electricity  Calculator</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="bg-light">
   <div class="container mt-5">
-    <h2 class="mb-4">Electricity Charge Calculator</h2>
+    <h2 class="mb-4">Calculate</h2>
     <form method="POST" class="card p-4 shadow-sm">
       <div class="form-group">
         <label for="voltage">Voltage (V)</label>
-        <input type="number" class="form-control" name="voltage" value="" required>
+<input type="number" class="form-control" name="voltage" value="<?php if (isset($_POST['voltage'])) echo $_POST['voltage']; ?>" required>
       </div>
       <div class="form-group">
         <label for="current">Current (A)</label>
-        <input type="number" class="form-control" name="current" value="" step="0.01" required>
+<input type="number" class="form-control" name="current" step="0.01" value="<?php if (isset($_POST['current'])) echo $_POST['current']; ?>" required>
       </div>
       <div class="form-group">
         <label for="rate">Current Rate (sen/kWh)</label>
-        <input type="number" class="form-control" name="rate" value=""  step="0.01" required>
+<input type="number" class="form-control" name="rate" step="0.01" value="<?php if (isset($_POST['rate'])) echo $_POST['rate']; ?>" required>
       </div>
       <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
