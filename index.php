@@ -9,7 +9,7 @@ function calculateEnergyTable($voltage, $current, $rate)
     echo "<div class='col-md-8'>";
     echo "<div class='alert alert-info'>";
     echo "<strong>POWER:</strong> " . number_format($power_kW, 5) . " kW<br>";
-    echo "<strong>RATE:</strong> RM " . number_format($rate_RM, 3) . "<br>";
+    echo "<strong>RATE:</strong> RM " . number_format($rate_RM, 2) . "<br>";
     echo "</div>";
     echo "</div>";
     echo "</div>";
